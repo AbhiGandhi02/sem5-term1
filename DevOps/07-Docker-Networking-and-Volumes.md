@@ -3,6 +3,8 @@
 > **DevOps – Lecture 7 notes.** Anything marked **➕ Extra** was not covered in class. It's there because it fills a gap or comes up often in labs and interviews.
 >
 > **Builds on:** [Lecture 5 – Docker](05-Docker.md) (port mapping, a first look at networks) and [Lecture 6 – Docker Part 2](06-Docker-Lifecycle-and-Multi-Stage.md) (lifecycle, `exec`, `prune`). Networking ideas (IP, DNS, ports) come from [Lecture 3](03-Networking.md).
+>
+> **Next:** [Lecture 8 – Kubernetes Basics](08-Kubernetes-Basics.md).
 
 ---
 
