@@ -4,7 +4,7 @@
 >
 > **Builds on:** every Kubernetes lecture so far, [8](08-Kubernetes-Basics.md) → [12](12-Kubernetes-Volumes-and-Autoscaling.md). The errors here are the ones you've already met in labs. This lecture puts the **debugging method** in one place and introduces **Helm** for packaging apps.
 >
-> **Practice:** [Kubernetes MCQs](Kubernetes-MCQs.md) · **Next:** [Lecture 14 – Kubernetes & Helm Revision](14-Kubernetes-and-Helm-Revision.md).
+> **Practice:** [Kubernetes MCQs](Kubernetes-MCQs.md) · [Helm MCQs](Helm-MCQs.md) · **Next:** [Lecture 14 – Kubernetes & Helm Revision](14-Kubernetes-and-Helm-Revision.md).
 
 ---
 

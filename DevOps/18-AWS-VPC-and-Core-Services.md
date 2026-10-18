@@ -3,6 +3,8 @@
 > **DevOps – Lecture 18 notes.** Anything marked **➕ Extra** was not covered in class. It's there because it fills a gap or comes up often in labs and interviews.
 >
 > **Builds on:** [Lecture 3 – Networking](03-Networking.md) (IP, CIDR/subnetting, NAT, firewalls: a VPC is all of that in the cloud) and [Lecture 17 – Terraform](17-Terraform-IaC.md) (we build the VPC as code).
+>
+> **Practice:** [Terraform & AWS MCQs](Terraform-AWS-MCQs.md).
 
 ---
 

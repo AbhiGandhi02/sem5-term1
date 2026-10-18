@@ -4,7 +4,7 @@
 >
 > **Full notes:** [L9 Services & Deployments](09-Kubernetes-Objects-Services-Deployments.md) · [L10 Strategies](10-Kubernetes-Deployment-Strategies.md) · [L11 ConfigMaps, Secrets & Ingress](11-Kubernetes-ConfigMaps-Secrets-Ingress.md) · [L12 Volumes & HPA](12-Kubernetes-Volumes-and-Autoscaling.md) · [L13 Troubleshooting & Helm](13-Kubernetes-Troubleshooting-and-Helm.md)
 >
-> **Practice:** [Kubernetes MCQs](Kubernetes-MCQs.md) · **Next:** [Lecture 15 – Course Recap & CI/CD with GitHub Actions](15-CICD-with-GitHub-Actions.md).
+> **Practice:** [Kubernetes MCQs](Kubernetes-MCQs.md) · [Helm MCQs](Helm-MCQs.md) · **Next:** [Lecture 15 – Course Recap & CI/CD with GitHub Actions](15-CICD-with-GitHub-Actions.md).
 
 ---
 
@@ -190,7 +190,7 @@ helm rollback my-release 1                                  # revision 3 (= revi
 helm uninstall my-release
 ```
 
-> ⚠️ **➕ Upgrade gotcha:** `helm upgrade` **without** your earlier `--set` flags goes back to the chart defaults. A later `helm upgrade my-release my-chart/` would quietly drop `replicaCount=3`. Keep overrides in a **values file** (`-f values-prod.yaml`) and pass it every time, or use `--reuse-values`.
+> ⚠️ **➕ Upgrade gotcha:** Helm doesn't merge new flags with the old ones. If you upgrade with **some** new values (e.g. `--set image.tag=1.28`) but **without** your earlier `--set replicaCount=3`, the release goes back to the chart's default `replicaCount`. (A completely plain `helm upgrade` with **no** values at all reuses the previous release's values.) Keep overrides in a **values file** (`-f values-prod.yaml`) and pass it every time, or use `--reuse-values`.
 
 **Multi-environment:** one chart + `values-dev.yaml` / `values-stage.yaml` / `values-prod.yaml`:
 ```bash
@@ -299,7 +299,7 @@ SERVICES      ClusterIP internal · NodePort nodeIP:30000-32767 · LoadBalancer 
               ExternalName = outbound DNS alias (NOT external access) · Headless = clusterIP: None
 STORAGE       emptyDir (Pod life) · hostPath (node) · PV/PVC (independent) · get pv / get pvc
 HELM          create · template · install · list · status · upgrade --set / -f · history · rollback · uninstall
-              upgrade without your --set resets to defaults → use -f values file / --reuse-values
+              upgrade with NEW values but without your old --set → old ones reset to defaults → -f values file / --reuse-values
               values-dev / stage / prod.yaml + helm upgrade --install
 ```
 
@@ -318,6 +318,6 @@ HELM          create · template · install · list · status · upgrade --set /
 9. **How is a headless Service defined?** `clusterIP: None`. The type is still ClusterIP.
 10. **emptyDir vs. hostPath vs. PV?** Pod lifetime vs. node lifetime vs. independent, durable storage.
 11. **What does `helm template` do, and why use it?** It renders the chart's YAML locally without installing, so you can review or debug it.
-12. **You ran `helm upgrade --set replicaCount=3`, then a plain `helm upgrade`. How many replicas now?** The chart default, because `--set` values aren't remembered. Use a values file or `--reuse-values`.
+12. **You ran `helm upgrade --set replicaCount=3`, then `helm upgrade --set image.tag=1.28`. How many replicas now?** The chart default, because new values replace the old ones instead of merging with them. Use a values file or `--reuse-values`. (With no values at all, Helm reuses the previous ones.)
 13. **`helm rollback my-release 1` when the release is at revision 2. What revision number does it create?** Revision 3, holding revision 1's configuration.
 14. **How does Helm handle dev, stage and prod?** One chart, with environment-specific values files passed through `-f`.

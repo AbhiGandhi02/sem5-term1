@@ -4,7 +4,7 @@
 >
 > **Where this fits:** so far we automated **apps**: building ([Docker](05-Docker.md)), running ([Kubernetes](08-Kubernetes-Basics.md)) and shipping ([CI/CD](15-CICD-with-GitHub-Actions.md)). Terraform automates the **infrastructure underneath**: servers, networks, buckets, databases, even the Kubernetes cluster itself.
 >
-> **Next:** [Lecture 18 – AWS Core Services & VPC](18-AWS-VPC-and-Core-Services.md).
+> **Practice:** [Terraform & AWS MCQs](Terraform-AWS-MCQs.md) · **Next:** [Lecture 18 – AWS Core Services & VPC](18-AWS-VPC-and-Core-Services.md).
 
 ---
 
@@ -248,12 +248,13 @@ Use it as **`var.<name>`**: `region = var.aws_region`.
 ### Ways to set a value (➕ later ones win)
 ```bash
 # 1. default in the variable block
-# 2. terraform.tfvars (loaded automatically)
+# 2. environment var:   export TF_VAR_environment=dev
+# 3. terraform.tfvars (loaded automatically)
 #      aws_region  = "ap-south-1"
 #      environment = "dev"
-# 3. a named file:      terraform apply -var-file="prod.tfvars"
-# 4. environment var:   export TF_VAR_environment=dev
-# 5. command line:      terraform apply -var="environment=prod"
+# 4. *.auto.tfvars files (loaded automatically, alphabetical order)
+# 5. command line:      terraform apply -var-file="prod.tfvars"  /  -var="environment=prod"
+#                       (both count as command line; if you give several, the last one wins)
 # 6. not set anywhere and no default → Terraform PROMPTS you for it
 ```
 > ➕ Mark secrets with `sensitive = true` so they're hidden in plan/apply output. Don't put real secrets in a committed `.tfvars` file.
@@ -583,7 +584,7 @@ TERRAFORM {}  required_version · required_providers { aws = { source = "hashico
 PROVIDER      plugin for one API · provider "aws" { region = var.aws_region } · downloaded by init
 RESOURCE      resource "TYPE" "NAME" { args } · reference TYPE.NAME.ATTR → automatic dependency/order
 VARIABLE      variable "x" { type, default, description, validation ➕, sensitive ➕ } → var.x
-              set via default < tfvars < -var-file < TF_VAR_x < -var · no value → prompt
+              set via default < TF_VAR_x < terraform.tfvars < *.auto.tfvars < -var / -var-file · no value → prompt
 OUTPUT        output "x" { value = ... } · terraform output [-raw x]
 LOCALS/DATA ➕ local.x = computed value · data "..." = READ existing things
 STATE ➕      terraform.tfstate maps code ↔ real resources · don't edit · don't commit (secrets)
@@ -608,7 +609,7 @@ ANALOGY       apply = build the apartment block from blueprints · destroy = dem
 6. **Explain `resource "aws_s3_bucket" "bucket_name"`.** The resource type comes from the AWS provider, and the local name is used to reference it in code (`aws_s3_bucket.bucket_name.id`).
 7. **How does Terraform know the order to create resources in?** From references between resources. It builds a dependency graph automatically.
 8. **Variables vs. outputs?** Variables are inputs (`var.x`), like function parameters. Outputs are values returned after apply, like return values.
-9. **List the ways to set a variable's value, and which wins.** Default → `terraform.tfvars` → `-var-file` → `TF_VAR_name` env var → `-var`. Later ones override earlier ones.
+9. **List the ways to set a variable's value, and which wins.** Default → `TF_VAR_name` env var → `terraform.tfvars` → `*.auto.tfvars` → `-var` / `-var-file` on the command line. Later ones override earlier ones.
 10. **What does `version = "~> 6.0"` mean?** Any 6.x version, but not 7.0.
 11. **Explain init, fmt, validate, plan, apply and destroy.** Set up and download providers / format the code / check the syntax / preview the changes / make the changes / delete everything.
 12. **Does `terraform fmt` only check formatting?** No, it rewrites files. `terraform fmt -check` only checks, which is useful in CI.

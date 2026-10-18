@@ -4,7 +4,7 @@
 >
 > **This lecture uses the whole course on one app.** Each stage links back to its lecture: [Docker](05-Docker.md) · [Kubernetes](09-Kubernetes-Objects-Services-Deployments.md) · [CI/CD](15-CICD-with-GitHub-Actions.md) · [image security](06-Docker-Lifecycle-and-Multi-Stage.md#9-docker--devsecops-secure-images).
 >
-> **Next:** [Lecture 17 – Terraform (IaC)](17-Terraform-IaC.md).
+> **Practice:** [CI/CD MCQs](CICD-MCQs.md) · **Next:** [Lecture 17 – Terraform (IaC)](17-Terraform-IaC.md).
 
 ---
 

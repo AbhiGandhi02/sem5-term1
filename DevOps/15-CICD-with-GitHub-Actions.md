@@ -3,6 +3,8 @@
 > **DevOps – Lecture 15 notes.** Anything marked **➕ Extra** was not covered in class. It's there because it fills a gap or comes up often in labs and interviews.
 >
 > This class did two things: (1) a **recap of the whole course**, which is a one-page map in §1 linking every lecture, and (2) a **new topic, CI/CD with GitHub Actions**, which is the rest of this file. CI/CD ties everything together: [Git](04-Git-Version-Control.md) triggers it, [shell scripts](02-Shell-Scripting.md) run in it, [Docker](05-Docker.md) images come out of it, and [Kubernetes](08-Kubernetes-Basics.md) runs them.
+>
+> **Practice:** [CI/CD MCQs](CICD-MCQs.md).
 
 ---
 
