@@ -4,7 +4,7 @@
 >
 > **Builds on:** [Lecture 3 – Networking](03-Networking.md) (IP, CIDR/subnetting, NAT, firewalls: a VPC is all of that in the cloud) and [Lecture 17 – Terraform](17-Terraform-IaC.md) (we build the VPC as code).
 >
-> **Practice:** [Terraform & AWS MCQs](Terraform-AWS-MCQs.md).
+> **Practice:** [Terraform & AWS MCQs](Terraform-AWS-MCQs.md) · **Next:** [Lecture 19 – Monitoring, Observability & GitOps](19-Monitoring-Observability-and-GitOps.md).
 
 ---
 

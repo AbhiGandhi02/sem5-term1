@@ -49,6 +49,7 @@
 | 16 | **End-to-end project** | One Flask app: manual → Docker → K8s → DevSecOps pipeline (pytest, CodeQL, pip-audit, Trivy) | [L16](16-End-to-End-Deployment-Project.md) |
 | 17 | **Terraform (IaC)** | Infrastructure as code: providers, resources, variables, outputs, state · init → plan → apply → destroy | [L17](17-Terraform-IaC.md) |
 | 18 | **AWS & VPC** | IaaS/PaaS/SaaS · EC2, S3, DynamoDB, IAM · VPC: subnets, route tables, IGW, NAT, SG vs NACL (built with Terraform) | [L18](18-AWS-VPC-and-Core-Services.md) |
+| 19 | **Monitoring & GitOps** | Prometheus (pull, PromQL) + Grafana dashboards · GitOps: Git as source of truth, Argo CD sync / prune / self-heal | [L19](19-Monitoring-Observability-and-GitOps.md) |
 
 **Practice:** [Kubernetes MCQs](Kubernetes-MCQs.md).
 
