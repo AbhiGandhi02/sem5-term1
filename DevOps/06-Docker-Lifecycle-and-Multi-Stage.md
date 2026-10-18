@@ -5,6 +5,8 @@
 > **Builds on:** [Lecture 5 – Docker](05-Docker.md). Basics like images vs. containers, Dockerfile instructions, layers, ports and Compose are **not repeated here**. This lecture goes deeper.
 >
 > **Next:** [Lecture 7 – Docker Networking & Volumes](07-Docker-Networking-and-Volumes.md).
+>
+> **Practice:** [Docker MCQs](Docker-MCQs.md).
 
 ---
 

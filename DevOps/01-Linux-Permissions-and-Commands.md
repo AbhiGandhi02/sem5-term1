@@ -1,6 +1,8 @@
 # Linux File Permissions & Essential Commands
 
 > **DevOps – Lecture 1 notes.** Anything marked **➕ Extra** was not covered in class. It's there because it fills a gap or comes up often in labs and interviews.
+>
+> **Practice:** [Foundations MCQs](Foundations-MCQs.md).
 
 ---
 

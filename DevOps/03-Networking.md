@@ -3,6 +3,8 @@
 > **DevOps – Lecture 3 notes.** Anything marked **➕ Extra** was not covered in class. It's there because it fills a gap or comes up often in labs and interviews.
 >
 > **Builds on:** [Lecture 1 – Linux](01-Linux-Permissions-and-Commands.md) (`ssh`, `scp`) and [Lecture 2 – Shell Scripting](02-Shell-Scripting.md) (you can script every command here).
+>
+> **Practice:** [Foundations MCQs](Foundations-MCQs.md).
 
 ---
 

@@ -3,6 +3,8 @@
 > **DevOps – Lecture 4 notes.** Anything marked **➕ Extra** was not covered in class. It's there because it fills a gap or comes up often in labs and interviews.
 >
 > **Builds on:** [Lecture 1 – Linux](01-Linux-Permissions-and-Commands.md) (`vi`, terminal basics) and [Lecture 3 – Networking](03-Networking.md) (HTTPS vs. SSH, port 22).
+>
+> **Practice:** [Foundations MCQs](Foundations-MCQs.md).
 
 ---
 

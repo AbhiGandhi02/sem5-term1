@@ -3,6 +3,8 @@
 > **DevOps – Lecture 2 notes.** Anything marked **➕ Extra** was not covered in class. It's there because it fills a gap or comes up often in labs and interviews.
 >
 > **Builds on:** [Lecture 1 – Linux Permissions & Commands](01-Linux-Permissions-and-Commands.md). You'll need `chmod +x` and the basic commands from there.
+>
+> **Practice:** [Foundations MCQs](Foundations-MCQs.md).
 
 ---
 

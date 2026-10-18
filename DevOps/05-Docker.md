@@ -5,6 +5,8 @@
 > **Builds on:** [Lecture 1 – Linux](01-Linux-Permissions-and-Commands.md) (processes, files), [Lecture 3 – Networking](03-Networking.md) (ports, `localhost` vs. `0.0.0.0`) and [Lecture 4 – Git](04-Git-Version-Control.md) (push your Dockerfiles to GitHub).
 >
 > **Next:** [Lecture 6 – Docker Part 2](06-Docker-Lifecycle-and-Multi-Stage.md) (full lifecycle, disk cleanup, multi-stage builds, security).
+>
+> **Practice:** [Docker MCQs](Docker-MCQs.md).
 
 ---
 
