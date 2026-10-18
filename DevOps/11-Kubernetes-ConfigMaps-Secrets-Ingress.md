@@ -4,7 +4,7 @@
 >
 > **Builds on:** [Lecture 8 – Kubernetes Basics](08-Kubernetes-Basics.md) (architecture) and [Lecture 9 – Services](09-Kubernetes-Objects-Services-Deployments.md#8-services-why-we-need-them) (ClusterIP, LoadBalancer, ports). DNS and HTTPS ideas come from [Lecture 3](03-Networking.md).
 >
-> **Practice:** [Kubernetes MCQs](Kubernetes-MCQs.md).
+> **Practice:** [Kubernetes MCQs](Kubernetes-MCQs.md) · **Next:** [Lecture 12 – Volumes & Autoscaling](12-Kubernetes-Volumes-and-Autoscaling.md).
 
 ---
 
