@@ -118,34 +118,34 @@ It answers questions like:
 
 ## 5. The Break-Even Chart (slide illustration)
 
-**Data:** SP = $50/unit, VC = $30/unit, FC = $40,000.
-- CM = 50 − 30 = **$20/unit**
+**Data:** SP = \$50/unit, VC = \$30/unit, FC = \$40,000.
+- CM = 50 − 30 = **\$20/unit**
 - BEP (units) = 40,000 ÷ 20 = **2,000 units**
-- BEP (sales) = 2,000 × 50 = **$1,00,000**
+- BEP (sales) = 2,000 × 50 = **\$1,00,000**
 
 **How to read the chart:**
 
 | Line / area | What it shows |
 |---|---|
-| Revenue line (blue) | Starts at $0 and rises steeply: +$50 per unit |
-| Total cost line (orange) | Starts at **$40,000 (the fixed cost)** and rises more gently: +$30 per unit |
-| Fixed cost line (dashed grey) | Flat at $40,000 at every volume |
-| Crossing point | **Break-even point**: 2,000 units, $1,00,000 sales |
+| Revenue line (blue) | Starts at \$0 and rises steeply: +\$50 per unit |
+| Total cost line (orange) | Starts at **\$40,000 (the fixed cost)** and rises more gently: +\$30 per unit |
+| Fixed cost line (dashed grey) | Flat at \$40,000 at every volume |
+| Crossing point | **Break-even point**: 2,000 units, \$1,00,000 sales |
 | Red triangle (left of BEP) | Loss zone: its height = the loss at that volume |
-| Green triangle (right of BEP) | Profit zone: the gap widens by $20 (the CM) per extra unit |
+| Green triangle (right of BEP) | Profit zone: the gap widens by \$20 (the CM) per extra unit |
 
 **Extended to 3,000 units sold:**
 
 | Item | Calculation | Amount |
 |---|---|---|
-| Revenue | 3,000 × 50 | $1,50,000 |
-| Total cost | 40,000 + 3,000 × 30 | $1,30,000 |
-| **Profit** | 1,50,000 − 1,30,000 | **$20,000** |
+| Revenue | 3,000 × 50 | \$1,50,000 |
+| Total cost | 40,000 + 3,000 × 30 | \$1,30,000 |
+| **Profit** | 1,50,000 − 1,30,000 | **\$20,000** |
 | MoS (units) | 3,000 − 2,000 | 1,000 units |
-| MoS (value) | 1,000 × 50 | $50,000 |
+| MoS (value) | 1,000 × 50 | \$50,000 |
 | MoS ratio | 50,000 ÷ 1,50,000 | **33.3%** |
 
-✔️ Check: Profit = MoS units × CM = 1,000 × 20 = $20,000 ✅
+✔️ Check: Profit = MoS units × CM = 1,000 × 20 = \$20,000 ✅
 
 > ⚠️ This illustration uses **$** while the rest of the deck uses ₹. The logic is identical.
 
@@ -336,15 +336,15 @@ These follow directly from the formulas above and save time in exams:
 - C) At the fixed cost level
 - D) At the break-even point
 
-> ✅ **Answer: C.** At zero units there is still the full fixed cost, so total cost starts at the FC level (e.g. $40,000) and rises by VC per unit. 📖 Section 5
+> ✅ **Answer: C.** At zero units there is still the full fixed cost, so total cost starts at the FC level (e.g. \$40,000) and rises by VC per unit. 📖 Section 5
 
-**Q18.** Using the slide illustration (SP $50, VC $30, FC $40,000), what are the profit and MoS % if the company sells 2,500 units?
-- A) $10,000 profit; MoS 20%
-- B) $10,000 profit; MoS 25%
-- C) $20,000 profit; MoS 33.3%
-- D) $50,000 profit; MoS 20%
+**Q18.** Using the slide illustration (SP \$50, VC \$30, FC \$40,000), what are the profit and MoS % if the company sells 2,500 units?
+- A) \$10,000 profit; MoS 20%
+- B) \$10,000 profit; MoS 25%
+- C) \$20,000 profit; MoS 33.3%
+- D) \$50,000 profit; MoS 20%
 
-> ✅ **Answer: A.** Profit = 2,500 × 20 − 40,000 = **$10,000**. MoS = 2,500 − 2,000 = 500 units, so MoS % = 500 ÷ 2,500 = **20%**. Option B divides by BEP units instead of actual units, and Option C is the 3,000-unit case. 📖 Section 5
+> ✅ **Answer: A.** Profit = 2,500 × 20 − 40,000 = **\$10,000**. MoS = 2,500 − 2,000 = 500 units, so MoS % = 500 ÷ 2,500 = **20%**. Option B divides by BEP units instead of actual units, and Option C is the 3,000-unit case. 📖 Section 5
 
 **Q19.** A product earns a contribution of ₹40 per unit and its P/V ratio is 25%. What is its selling price?
 - A) ₹50

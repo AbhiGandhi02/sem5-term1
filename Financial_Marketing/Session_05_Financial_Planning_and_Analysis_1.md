@@ -227,7 +227,7 @@ Charging a **share of total production overheads to each unit**, using a suitabl
 
 $$\textbf{OAR (Overhead Absorption Rate)} = \frac{\text{Budgeted Overhead}}{\text{Budgeted Activity}}$$
 
-**Example:** Factory overhead $100,000, units 20,000 → $100,000 ÷ 20,000 = **$5 per unit**.
+**Example:** Factory overhead \$100,000, units 20,000 → \$100,000 ÷ 20,000 = **\$5 per unit**.
 
 > 💡 "Activity" is not only units. It can also be **machine-hours** (machine-heavy factory) or **labour-hours** (labour-heavy factory). Pick the basis that best drives the overheads.
 > ⚠️ This example on the slide is in **$ (dollars)**, while everything else is in ₹. The concept is the same.

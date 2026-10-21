@@ -75,7 +75,7 @@ $$\textbf{FV = PV × (1 + r)ⁿ}$$
 
 (1 + r)ⁿ is the **Future Value Interest Factor (FVIF)**, also called the compounding factor.
 
-> ⚠️ Slide 9 writes "Original principal ₹110 + Interest ₹10 + Interest on interest ₹1". The principal is ₹100; the ₹121 is 100 + 10 + 10 + 1. The formula there also uses "$1" instead of ₹1.
+> ⚠️ Slide 9 writes "Original principal ₹110 + Interest ₹10 + Interest on interest ₹1". The principal is ₹100; the ₹121 is 100 + 10 + 10 + 1. The formula there also uses "\$1" instead of ₹1.
 
 **Worked example:** ₹10,000 at 10% p.a. for 3 years → FV = 10,000 × 1.331 = **₹13,310**. The extra ₹3,310 comes purely from compounding.
 
